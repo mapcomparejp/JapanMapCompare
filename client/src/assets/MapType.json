@@ -1,0 +1,73 @@
+[
+    {
+        "value": "tPale",
+        "text": "地理院地図 淡色",
+        "tileURL": "https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png",
+        "attribution": "<a href='http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html' target='_blank'>国土地理院</a>"
+    },
+    {
+        "value": "tOrt",
+        "text": "地理院地図 オルソ",
+        "tileURL": "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg",
+        "attribution": "<a href='http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html' target='_blank'>国土地理院</a>"
+    },
+    {
+        "value": "mieNormal",
+        "text": "MIERUNE Normal",
+        "tileURL": "https://tile.cdn.mierune.co.jp/styles/normal/{z}/{x}/{y}.png?key=",
+        "attribution": "Maptiles by <a href='http://mierune.co.jp/' target='_blank'>MIERUNE</a>, under CC BY. Data by <a href='http://osm.org/copyright' target='_blank'>OpenStreetMap</a> contributors, under ODbL."
+    },
+    {
+        "value": "mieMono",
+        "text": "MIERUNE MONO",
+        "tileURL": "https://tile.mierune.co.jp/mierune_mono/{z}/{x}/{y}.png",
+        "attribution": "Maptiles by <a href='http://mierune.co.jp/' target='_blank'>MIERUNE</a>, under CC BY. Data by <a href='http://osm.org/copyright' target='_blank'>OpenStreetMap</a> contributors, under ODbL."
+    },
+    {
+        "value": "osm",
+        "text": "OpenStreetMap",
+        "tileURL": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        "attribution": "&copy; <a href='http://osm.org/copyright'>OpenStreetMap</a> contributors"
+    },
+    {
+        "value": "mapDark",
+        "text": "Mapbox Dark",
+        "tileURL": "https://api.mapbox.com/styles/v1/mapcomparejp/cjxbqjryd4sdd1coy00sc6n1z/tiles/256/{z}/{x}/{y}?access_token=",
+        "attribution": "&copy; <a href='https://www.mapbox.com/map-feedback/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a>"
+    },
+    {
+        "value": "mapSatellite",
+        "text": "Mapbox Satellite",
+        "tileURL": "https://api.mapbox.com/styles/v1/mapcomparejp/ck04i5qtk0irl1crsnb03v1od/tiles/256/{z}/{x}/{y}?access_token=",
+        "attribution": "&copy; <a href='https://www.mapbox.com/map-feedback/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a>"
+    },
+    {
+        "value": "esri",
+        "text": "ESRI",
+        "tileURL": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}.png",
+        "attribution": "&copy; <a href='http://osm.org/copyright'>ESRI</a> contributors"
+    },
+    {
+        "value": "bRoad",
+        "text": "BingMaps Road",
+        "bingMapsKey": "",
+        "imagerySet": "Road",
+        "culture": "ja"
+    },
+    {
+        "value": "gRoad",
+        "text": "GoogleMaps Road",
+        "googleMapsKey": "",
+        "type": "roadmap"
+    },
+    {
+        "value": "mapfan",
+        "text": "Mapfan",
+        "mapFanAuthKey": "",
+        "tileURL": [
+            "https://api-map-pre.mapfan.com/v1/map?key=",
+            "=&landmarkicon=on&rotationangle=0&logo=on&tilematrix=EPSG:3857:{z}&tilerow={y}&tilecol={x}"
+        ],
+        "attribution": "&copy; INCREMENT P CORPORATION"
+    }
+]

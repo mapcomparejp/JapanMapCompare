@@ -1,0 +1,164 @@
+[
+    {
+        "id": 1,
+        "data": [
+            {
+                "heightVal": "81vh",
+                "gridClass": "col-sm-12",
+                "mapList": [
+                    {
+                        "mapId": "view1_1",
+                        "mapType": "tPale"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "data": [
+            {
+                "heightVal": "81vh",
+                "gridClass": "col-sm-6",
+                "mapList": [
+                    {
+                        "mapId": "view2_1",
+                        "mapType": "tPale"
+                    },
+                    {
+                        "mapId": "view2_2",
+                        "mapType": "osm"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "data": [
+            {
+                "heightVal": "81vh",
+                "gridClass": "col-sm-4",
+                "mapList": [
+                    {
+                        "mapId": "view3_1",
+                        "mapType": "tPale"
+                    },
+                    {
+                        "mapId": "view3_2",
+                        "mapType": "osm"
+                    },
+                    {
+                        "mapId": "view3_3",
+                        "mapType": "tOrt"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "data": [
+            {
+                "heightVal": "37vh",
+                "gridClass": "col-sm-6",
+                "mapList": [
+                    {
+                        "mapId": "view4_1",
+                        "mapType": "tPale"
+                    },
+                    {
+                        "mapId": "view4_2",
+                        "mapType": "osm"
+                    },
+                    {
+                        "mapId": "view4_3",
+                        "mapType": "tOrt"
+                    },
+                    {
+                        "mapId": "view4_4",
+                        "mapType": "mieNormal"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "data": [
+            {
+                "heightVal": "37vh",
+                "gridClass": "col-lg-4 col-md-6 col-sm-6",
+                "mapList": [
+                    {
+                        "mapId": "view6_1",
+                        "mapType": "tPale"
+                    },
+                    {
+                        "mapId": "view6_2",
+                        "mapType": "osm"
+                    },
+                    {
+                        "mapId": "view6_3",
+                        "mapType": "tOrt"
+                    },
+                    {
+                        "mapId": "view6_4",
+                        "mapType": "mieNormal"
+                    },
+                    {
+                        "mapId": "view6_5",
+                        "mapType": "mapDark"
+                    },
+                    {
+                        "mapId": "view6_6",
+                        "mapType": "esri"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "data": [
+            {
+                "heightVal": "37vh",
+                "gridClass": "col-lg-3 col-md-6 col-sm-6",
+                "mapList": [
+                    {
+                        "mapId": "view8_1",
+                        "mapType": "tPale"
+                    },
+                    {
+                        "mapId": "view8_2",
+                        "mapType": "osm"
+                    },
+                    {
+                        "mapId": "view8_3",
+                        "mapType": "tOrt"
+                    },
+                    {
+                        "mapId": "view8_4",
+                        "mapType": "mieNormal"
+                    },
+                    {
+                        "mapId": "view8_5",
+                        "mapType": "mapDark"
+                    },
+                    {
+                        "mapId": "view8_6",
+                        "mapType": "esri"
+                    },
+                    {
+                        "mapId": "view8_7",
+                        "mapType": "bRoad"
+                    },
+                    {
+                        "mapId": "view8_8",
+                        "mapType": "mieMono"
+                    }
+                ]
+            }
+        ]
+    }
+]
