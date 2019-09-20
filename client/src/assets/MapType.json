@@ -14,7 +14,7 @@
     {
         "value": "mieNormal",
         "text": "MIERUNE Normal",
-        "tileURL": "https://tile.cdn.mierune.co.jp/styles/normal/{z}/{x}/{y}.png?key=",
+        "tileURL": "https://tile.cdn.mierune.co.jp/styles/normal/{z}/{x}/{y}.png?key=xxxxx",
         "attribution": "Maptiles by <a href='http://mierune.co.jp/' target='_blank'>MIERUNE</a>, under CC BY. Data by <a href='http://osm.org/copyright' target='_blank'>OpenStreetMap</a> contributors, under ODbL."
     },
     {
@@ -32,13 +32,13 @@
     {
         "value": "mapDark",
         "text": "Mapbox Dark",
-        "tileURL": "https://api.mapbox.com/styles/v1/mapcomparejp/cjxbqjryd4sdd1coy00sc6n1z/tiles/256/{z}/{x}/{y}?access_token=",
+        "tileURL": "https://api.mapbox.com/styles/v1/mapcomparejp/xxxxx/tiles/256/{z}/{x}/{y}?access_token=xxxxx",
         "attribution": "&copy; <a href='https://www.mapbox.com/map-feedback/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a>"
     },
     {
         "value": "mapSatellite",
         "text": "Mapbox Satellite",
-        "tileURL": "https://api.mapbox.com/styles/v1/mapcomparejp/ck04i5qtk0irl1crsnb03v1od/tiles/256/{z}/{x}/{y}?access_token=",
+        "tileURL": "https://api.mapbox.com/styles/v1/mapcomparejp/xxxxx/tiles/256/{z}/{x}/{y}?access_token=xxxxx",
         "attribution": "&copy; <a href='https://www.mapbox.com/map-feedback/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a>"
     },
     {
@@ -50,20 +50,20 @@
     {
         "value": "bRoad",
         "text": "BingMaps Road",
-        "bingMapsKey": "",
+        "bingMapsKey": "xxxxx",
         "imagerySet": "Road",
         "culture": "ja"
     },
     {
         "value": "gRoad",
         "text": "GoogleMaps Road",
-        "googleMapsKey": "",
+        "googleMapsKey": "xxxxx",
         "type": "roadmap"
     },
     {
         "value": "mapfan",
         "text": "Mapfan",
-        "mapFanAuthKey": "",
+        "mapFanAuthKey": "xxxxx",
         "tileURL": [
             "https://api-map-pre.mapfan.com/v1/map?key=",
             "=&landmarkicon=on&rotationangle=0&logo=on&tilematrix=EPSG:3857:{z}&tilerow={y}&tilecol={x}"

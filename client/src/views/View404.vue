@@ -3,7 +3,7 @@
         <b-container fluid>
             <b-row>
                 <b-col cols='12'>
-                    <img alt="Sorry" src="../assets/sorry.png">
+                    <img alt='Sorry' src='../assets/sorry.png'>
                     <h3>No Page</h3>
                 </b-col>
             </b-row>

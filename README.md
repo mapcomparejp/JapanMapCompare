@@ -25,7 +25,7 @@ Environment
 
 <br>
 
-API key setting is required
+The API key must be set in the 「xxxxx」 part of the file.
 
 ```
 /src/assets/MapType.json
