@@ -127,7 +127,6 @@ export default new Vuex.Store({
         },
         // MapFan認証キー取得
         async getMapFanApiKeyAction(context, mapFanAuthKey) {
-            // https://api-auth-pre.mapfan.com/v1/auth?appid=APIキー&date=20171101102029
             const mapFanAuthUrl = 'https://api-auth-pre.mapfan.com/v1/auth?appid=' + mapFanAuthKey + '&date=20171101102029';
             let mapFanApiKey;
             await axios.get(mapFanAuthUrl, {
