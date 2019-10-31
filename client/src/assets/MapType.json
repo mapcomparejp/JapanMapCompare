@@ -43,9 +43,9 @@
     },
     {
         "value": "esri",
-        "text": "ESRI",
+        "text": "Esri",
         "tileURL": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}.png",
-        "attribution": "&copy; <a href='http://osm.org/copyright'>ESRI</a> contributors"
+        "attribution": "Sources: Esri, HERE, Garmin, USGS, Intermap, INCREMENT P, NRCan, Esri Japan, METI, Esri China (Hong Kong), Esri Korea, Esri (Thailand), NGCC, (c) OpenStreetMap contributors, and the GIS User Community | Powered by <a href='https://www.esri.com/ja-jp/home'>Esri</a>"
     },
     {
         "value": "bRoad",
@@ -62,7 +62,7 @@
     },
     {
         "value": "mapfan",
-        "text": "Mapfan",
+        "text": "MapFan",
         "mapFanAuthKey": "xxxxx",
         "tileURL": [
             "https://api-map-pre.mapfan.com/v1/map?key=",
