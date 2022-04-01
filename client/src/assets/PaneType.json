@@ -27,7 +27,7 @@
                     },
                     {
                         "mapId": "view2_2",
-                        "mapType": "osm"
+                        "mapType": "mieStreets"
                     }
                 ]
             }
@@ -46,11 +46,11 @@
                     },
                     {
                         "mapId": "view3_2",
-                        "mapType": "osm"
+                        "mapType": "mieStreets"
                     },
                     {
                         "mapId": "view3_3",
-                        "mapType": "mieStreets"
+                        "mapType": "mapStreets"
                     }
                 ]
             }
@@ -69,15 +69,15 @@
                     },
                     {
                         "mapId": "view4_2",
-                        "mapType": "osm"
-                    },
-                    {
-                        "mapId": "view4_3",
                         "mapType": "mieStreets"
                     },
                     {
-                        "mapId": "view4_4",
+                        "mapId": "view4_3",
                         "mapType": "mapStreets"
+                    },
+                    {
+                        "mapId": "view4_4",
+                        "mapType": "apmapsStandard"
                     }
                 ]
             }
@@ -96,23 +96,23 @@
                     },
                     {
                         "mapId": "view6_2",
-                        "mapType": "osm"
-                    },
-                    {
-                        "mapId": "view6_3",
                         "mapType": "mieStreets"
                     },
                     {
-                        "mapId": "view6_4",
+                        "mapId": "view6_3",
                         "mapType": "mapStreets"
                     },
                     {
+                        "mapId": "view6_4",
+                        "mapType": "apmapsStandard"
+                    },
+                    {
                         "mapId": "view6_5",
-                        "mapType": "esri"
+                        "mapType": "tOrt"
                     },
                     {
                         "mapId": "view6_6",
-                        "mapType": "tOrt"
+                        "mapType": "mieSatellite"
                     }
                 ]
             }
@@ -131,31 +131,31 @@
                     },
                     {
                         "mapId": "view8_2",
-                        "mapType": "osm"
-                    },
-                    {
-                        "mapId": "view8_3",
                         "mapType": "mieStreets"
                     },
                     {
-                        "mapId": "view8_4",
+                        "mapId": "view8_3",
                         "mapType": "mapStreets"
                     },
                     {
-                        "mapId": "view8_5",
-                        "mapType": "esri"
+                        "mapId": "view8_4",
+                        "mapType": "apmapsStandard"
                     },
                     {
-                        "mapId": "view8_6",
+                        "mapId": "view8_5",
                         "mapType": "tOrt"
                     },
                     {
-                        "mapId": "view8_7",
+                        "mapId": "view8_6",
                         "mapType": "mieSatellite"
                     },
                     {
-                        "mapId": "view8_8",
+                        "mapId": "view8_7",
                         "mapType": "mapSatellite"
+                    },
+                    {
+                        "mapId": "view8_8",
+                        "mapType": "apmapsSatelite"
                     }
                 ]
             }

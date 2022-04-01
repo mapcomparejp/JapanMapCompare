@@ -42,6 +42,12 @@
         "attribution": "&copy; <a href='http://osm.org/copyright'>OpenStreetMap</a> contributors"
     },
     {
+        "value": "mapboxJapan",
+        "text": "Mapbox Japan Data",
+        "tileURL": "https://api.mapbox.com/styles/v1/xxxxx/xxxxx/tiles/256/{z}/{x}/{y}?access_token=xxxxx",
+        "attribution": "&copy; <a href='https://www.mapbox.com/map-feedback/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a>"
+    },
+    {
         "value": "mapStreets",
         "text": "Mapbox Streets",
         "tileURL": "https://api.mapbox.com/styles/v1/xxxxx/xxxxx/tiles/256/{z}/{x}/{y}?access_token=xxxxx",
@@ -61,9 +67,9 @@
     },
     {
         "value": "esri",
-        "text": "ESRI",
+        "text": "Esri",
         "tileURL": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}.png",
-        "attribution": "&copy; <a href='http://osm.org/copyright'>ESRI</a> contributors"
+        "attribution": "Sources: Esri, HERE, Garmin, USGS, Intermap, INCREMENT P, NRCan, Esri Japan, METI, Esri China (Hong Kong), Esri Korea, Esri (Thailand), NGCC, (c) OpenStreetMap contributors, and the GIS User Community | Powered by <a href='https://www.esri.com/ja-jp/home'>Esri</a>"
     },
     {
         "value": "bRoad",
@@ -79,8 +85,22 @@
         "type": "roadmap"
     },
     {
+        "value": "apmapsStandard",
+        "text": "Apple Maps Standard",
+        "mapKitToken": "xxxxx",
+        "type": "standard",
+        "attribution": "&copy; <a href='https://www.apple.com/legal/internet-services/maps/legal-jp.html'>Apple Inc.</a>"
+    },
+    {
+        "value": "apmapsSatelite",
+        "text": "Apple Maps Satellite",
+        "mapKitToken": "xxxxx",
+        "type": "satellite",
+        "attribution": "&copy; <a href='https://www.apple.com/legal/internet-services/maps/legal-jp.html'>Apple Inc.</a>"
+    },
+    {
         "value": "mapfan",
-        "text": "Mapfan",
+        "text": "MapFan",
         "mapFanAuthKey": "xxxxx",
         "tileURL": [
             "https://api-map-pre.mapfan.com/v1/map?key=",

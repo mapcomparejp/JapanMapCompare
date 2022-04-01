@@ -15,7 +15,7 @@ const router = new Router({
     routes: [
         {
             // ペインページ初期表示用 (1,2,3,4,6,8のみ)
-            path: '/:id([123468])/:zoom(\\d+)/:lat(\\d+.\\d+)/:lng(\\d+.\\d+)/:layer(.+)',
+            path: '/:id([123468])/:zoom(\\d+)/:lat([-]?\\d+[.]?[\\d]*)/:lng([-]?\\d+[.]?[\\d]*)/:layer(.+)',
             name: 'paneLatLng',
             component: Pane,
             // ペイン・ズーム・経度・緯度・レイヤ情報を格納

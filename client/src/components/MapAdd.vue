@@ -58,6 +58,18 @@ export default {
         // マップオブジェクト生成処理
         this.mapCreate(this.lat, this.lng, this.zoom);
     },
+    computed: {
+        // storeのstateに変化があったら呼び出される
+        changeStateCoordinates: function() {
+            return this.$store.state.mapCoordinates;
+        },
+    },
+    watch: {
+        changeStateCoordinates: function(coordinates) {
+            // 検索結果の位置へ飛ぶ
+            this.mapIdObj[this.mapIdName].panTo([coordinates[0], coordinates[1]], this.$store.state.zoom);
+        },
+    },
     methods: {
         // タイルオブジェクト生成処理
         tileCreate: function() {
@@ -82,6 +94,17 @@ export default {
                     this.tileAdd[v.value + '_' + this.mapIdName] = new L.tileLayer(mapFanMapUrl, {
                         attribution: v.attribution,
                     });
+                } else if ((v.value === 'apmapsStandard') || (v.value === 'apmapsSatelite')) {
+                    this.tileAdd[v.value + '_' + this.mapIdName] = new L.mapkitMutant({
+                        // Mapkitタイル
+                        type: v.type,
+                        authorizationCallback: function(done) {
+                            done(v.mapKitToken)
+                        },
+                        debugRectangle: false,
+                        attribution: v.attribution
+                    });
+
                 } else {
                     // 一般タイル
                     this.tileAdd[v.value + '_' + this.mapIdName] = new L.tileLayer(v.tileURL, {
@@ -129,7 +152,7 @@ export default {
                 index: this.index,
                 selected: this.selected,
             });
-        },
+        }
     },
 };
 </script>

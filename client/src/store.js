@@ -19,13 +19,19 @@ export default new Vuex.Store({
         // ペイン配置情報管理
         mapTypeJson: null,
         // 初期URL
-        rootUrl: '/3/14/35.6795/139.7672/tPale/osm/mieStreets',
+        rootUrl: '/3/14/35.6795/139.7672/tPale/mieStreets/mapStreets',
         // 現在のレイヤ順情報URL
         nowMapTypeUrl: '',
         // 画面遷移後のレイヤ順情報URL
         nextMapTypeUrl: '',
         // MapFanAPIキー
         mapFanApiKey: '',
+        // 住所検索で返ってきたリスト
+        searchResultList: null,
+        // 住所検索用のlatlng
+        mapCoordinates:[],
+        // 住所検索の際、何も検索されなかった時などのメッセージ用
+        searchResultMsg: '',
     },
     mutations: {
         // ローダー状態格納
@@ -86,6 +92,18 @@ export default new Vuex.Store({
         getMapFanApiKey(state, mapFanApiKey) {
             state.mapFanApiKey = mapFanApiKey;
         },
+        // 住所検索時緯度経度登録
+        setCoordinatesInfo(state, val) {
+            state.mapCoordinates = [val.lat, val.lng];
+        },
+        // 住所検索時結果リスト格納
+        setSearchResultList(state, val) {
+            state.searchResultList = val;
+        },
+        // 住所検索時メッセージ
+        setSearchResultMsg(state, val) {
+            state.searchResultMsg = val;
+        },
     },
     actions: {
         // 各情報をstateに格納
@@ -143,5 +161,36 @@ export default new Vuex.Store({
             // MapFanAPIキー格納
             context.commit('getMapFanApiKey', mapFanApiKey);
         },
+        // 逆ジオコーディング
+        async getSearchPointAction(context, searchText) {
+            if (searchText === ''){
+                // 入力が無い場合
+                context.commit('setSearchResultMsg', '検索キーワードを入力してください');
+                return;
+            }
+            const searchUrl =
+                'https://msearch.gsi.go.jp/address-search/AddressSearch?q=' +
+                searchText;
+            await axios
+                .get(searchUrl)
+                .then(res => {
+                    let jsonData = JSON.stringify(res.data);
+                    let encoded_json = JSON.parse(jsonData);
+                    if (encoded_json.length == 0) {
+                        // 住所検索結果が返ってこなかった場合
+                        context.commit('setSearchResultMsg', '該当する候補地点がありません。他の検索キーワードを入力してください');
+                        return;
+                    }
+                    if (encoded_json.length > 100) {
+                        // 検索結果が多すぎる場合
+                        context.commit('setSearchResultMsg', '検索結果が100件を超えました、検索キーワードを増やしてください');
+                        encoded_json.length = 100;
+                    } else {
+                        context.commit('setSearchResultMsg', '');
+                    }
+                    // 結果リスト保存
+                    context.commit('setSearchResultList', encoded_json);
+                });
+        }
     },
 });

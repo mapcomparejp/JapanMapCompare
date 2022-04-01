@@ -18,6 +18,9 @@ import 'leaflet/dist/leaflet.css';
 import 'leaflet.gridlayer.googlemutant';
 import 'leaflet-bing-layer';
 import 'leaflet.sync';
+import 'leaflet.mapkitmutant';
+// Apple MapKit読み込み
+import 'apple-mapkit-js';
 
 Vue.config.productionTip = false;
 

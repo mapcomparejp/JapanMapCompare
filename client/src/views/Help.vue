@@ -5,58 +5,169 @@
 
         <b-container>
             <b-row>
-                <b-col cols="11" offset="1" class="my-5">
-                    <h3>This web site is</h3>
-                </b-col>
-
-                <b-col cols="11" offset="1" class="mb-5">
+                <b-col cols="11" offset="1" class="mb-5 mt-5">
                     <h5 class="mb-3">Japan Map Compare: mapcompare.jp</h5>
                     <p>
-                        Japan Map Compare can compare the various webmaps focusing on Japan area
-                        including OpenStreetMap, Bing, Google, ESRI, Mapfan and GSI Map. It is
-                        inspired by
-                        <b-link href="https://tools.geofabrik.de/mc" target="_blank"
-                            >Map Compare</b-link
-                        >
-                        coded by Geofabrik and BBBike (Thanks a lot!!) and is developed using modern
-                        webmapping technologies like Leaflet, Vue.js...
+                        mapcompare.jpはOpenStreetMap, MapTiler, MapBox, Bing, Google, Apple, ESRI, Mapfan, 
+                        地理院地図などの日本国内を対象としたウェブ地図を比較可能なページです。
+                        GeofabrikとBBBikeが開発してきた Map Compare（
+                        <b-link href="https://tools.geofabrik.de/mc" target="_blank">Geofabrik版</b-link>
+                        ・<b-link href="https://mc.bbbike.org/mc/" target="_blank">BBBike版</b-link>）のアイデアをベースに、
+                        Leaflet, Vue.jsなどの新しいウェブ地図技術を用いて構築したものです。
                     </p>
                     <p>
-                        You can use permalink to save the current status of showing page as below
-                        example.
+                        表示しているページのパーマリンクは下記の例のように作成できます
                     </p>
                     <p>
                         https://mapcompare.jp/3{number of panels}/14{zoom
                         level}/35.6795{lat}/139.7672{lon}/tPale{webmap_1}/osm{webmap_2}/tOrt{webmap_3}
                     </p>
                     <p>
-                        Comparison with Bing Maps, Google Maps, Mapfan is for informational purposes
-                        only. Do not use information from these webmaps to edit OpenStreetMap data.
+                        MapBox, Bing Maps, Google Maps, Apple Maps, Mapfanは、相互に閲覧比較するためのみ用いることができます。
+                        OpenStreetMapのデータ編集のために、これらのウェブ地図のデータを絶対に用いないでください。
                     </p>
                 </b-col>
 
                 <b-col cols="11" offset="1" class="mb-5">
-                    <h5 class="mb-4">Comparable webmaps {webmap}:</h5>
+                    <h5 class="mb-4">比較可能なウェブ地図一覧 {webmap}:</h5>
                     <b-table :items="items"></b-table>
                 </b-col>
 
                 <b-col cols="11" offset="1" class="mb-5">
-                    <h5 class="mb-3">developed by:</h5>
+                    <h5 class="mb-3">このページは下記の研究プロジェクトによって開発されています:</h5>
                     <p>
-                        JSPS Scientific Research (B) (Generative Research Fields) Project: Trusts of
-                        Crowdsourced Geographic Information
+                        <b-link
+                        href="https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-18KT0049"
+                        target="_blank"
+                    >
+                            2018-2021年度科学研究費基盤研究 (B) (特設分野) : クラウドソース型地理情報のトラスト
+                        </b-link>
                     </p>
-                    <p>mapcomparejp@gmail.com</p>
                     <b-link
                         href="https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-18KT0049"
                         target="_blank"
                     >
                         <b-img src="../assets/trusts_of_gi.png"></b-img>
                     </b-link>
+                    <p>
+                        <b-link
+                        href="https://speakerdeck.com/tosseto/20190921sotm2019-lt-mc"
+                        target="_blank"
+                    >
+                            ・State of the Map 2019 Lightning Talk
+                        </b-link>
+                    </p>
+                </b-col>
+
+                <b-col cols="11" offset="1" class="mb-5">
+                    <h5 class="mb-3">メールアドレス:</h5>
+                    <p>mapcomparejp[at]gmail.com</p>
+                </b-col>
+
+                <b-col cols="11" offset="1" class="mb-5">
+                    <h5 class="mb-3">開発:</h5>
+                    <p>MIERUNE Inc.</p>
+                    <b-link href="https://mierune.co.jp" target="_blank">
+                        <b-img src="../assets/mierune.png"></b-img>
+                    </b-link>
+                </b-col>
+
+                <b-col cols="11" offset="1" class="mb-5">
+                    <h5 class="mb-3">ライセンス:</h5>
+                    <p>
+                        地理院地図/Maptiler/MapBox/Bing/Google/ESRI/Mapfanを除くOpenStreetMapベースのデータは 
+                        © OpenStreetMap (License: ODbL 1.0), OSMタイル CC-BY-SA 2.0
+                    </p>
+                    <p>
+                        mapcompare.jpのソースコードは
+                        <b-link href="https://opensource.org/licenses/BSD-2-Clause" target="_blank"
+                            >2-Clause BSDライセンス</b-link
+                        >により公開されています
+                    </p>
+                </b-col>
+
+                <b-col cols="11" offset="1" class="mb-5">
+                    <h5>GitHub:</h5>
+                    <p>
+                        <b-link
+                            href="https://github.com/mapcomparejp/JapanMapCompare"
+                            target="_blank"
+                            >mapcomparejp/JapanMapCompare</b-link
+                        >
+                    </p>
+                </b-col>
+
+                <b-col cols="11" offset="1" class="mb-5">
+                    <h5 class="mb-3">検証済みブラウザ:</h5>
+                    <p>Google Chrome (最新版)</p>
+                    <p>Firefox (最新版)</p>
+                </b-col>
+            </b-row>
+
+            <hr/>
+            <!-- english -->
+            <b-row>
+                <b-col cols="11" offset="1" class="mb-5 mt-3">
+                    <h5 class="mb-3">Japan Map Compare: mapcompare.jp</h5>
+                    <p>
+                        Japan Map Compare can compare the various webmaps focusing on Japan area including 
+                        OpenStreetMap, MapTiler, MapBox, Bing, Google, Apple, ESRI, Mapfan and GSI Map. 
+                        It is inspired by Map Compare coded by 
+                        <b-link href="https://tools.geofabrik.de/mc" target="_blank">Geofabrik</b-link> 
+                        and <b-link href="https://mc.bbbike.org/mc/" target="_blank">BBBike</b-link> 
+                        (Thanks a lot!!) and is developed using modern webmapping technologies like Leaflet, Vue.js…
+                    </p>
+                    <p>
+                        You can use permalink to save the current status of showing page as below example.
+                    </p>
+                    <p>
+                        https://mapcompare.jp/3{number of panels}/14{zoom
+                        level}/35.6795{lat}/139.7672{lon}/tPale{webmap_1}/osm{webmap_2}/tOrt{webmap_3}
+                    </p>
+                    <p>
+                        Comparison with MapBox, Bing Maps, Google Maps, Apple Maps, Mapfan is for informational 
+                        purposes only. Do not use information from these webmaps to edit OpenStreetMap data.
+                    </p>
+                </b-col>
+
+                <b-col cols="11" offset="1" class="mb-5">
+                    <h5 class="mb-4">Comparable webmaps {webmap}:</h5>
+                    <b-table :items="itemsEglish"></b-table>
                 </b-col>
 
                 <b-col cols="11" offset="1" class="mb-5">
                     <h5 class="mb-3">developed by:</h5>
+                    <p>
+                        <b-link
+                        href="https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-18KT0049"
+                        target="_blank"
+                    >
+                            JSPS Scientific Research (B) (Generative Research Fields) Project: Trusts of Crowdsourced Geographic Information
+                        </b-link>
+                    </p>
+                    <b-link
+                        href="https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-18KT0049"
+                        target="_blank"
+                    >
+                        <b-img src="../assets/trusts_of_gi.png"></b-img>
+                    </b-link>
+                    <p>
+                        <b-link
+                        href="https://speakerdeck.com/tosseto/20190921sotm2019-lt-mc"
+                        target="_blank"
+                    >
+                            ・State of the Map 2019 Lightning Talk
+                        </b-link>
+                    </p>
+                </b-col>
+
+                <b-col cols="11" offset="1" class="mb-5">
+                    <h5 class="mb-3">Contact us:</h5>
+                    <p>mapcomparejp[at]gmail.com</p>
+                </b-col>
+
+                <b-col cols="11" offset="1" class="mb-5">
+                    <h5 class="mb-3">Developed by:</h5>
                     <p>MIERUNE Inc.</p>
                     <b-link href="https://mierune.co.jp" target="_blank">
                         <b-img src="../assets/mierune.png"></b-img>
@@ -66,11 +177,10 @@
                 <b-col cols="11" offset="1" class="mb-5">
                     <h5 class="mb-3">License:</h5>
                     <p>
-                        All maps except GSI Maps（地理院地図）/Bing/Google/ESRI/Mapfan based on OSM
-                        data © OpenStreetMap (License: ODbL 1.0), OSM Tiles licensed CC-BY-SA 2.0
+                        All maps except GSI Maps（地理院地図）/MapBox/Bing/Google/ESRI/Mapfan based on OSM data © OpenStreetMap (License: ODbL 1.0), OSM Tiles licensed CC-BY-SA 2.0
                     </p>
                     <p>
-                        The source code of Japan Map Compare is licensed under The
+                        The source code of Japan Map Compare is licensed under The 
                         <b-link href="https://opensource.org/licenses/BSD-2-Clause" target="_blank"
                             >2-Clause BSD License</b-link
                         >
@@ -110,75 +220,166 @@ export default {
         return {
             items: [
                 {
-                    name: '地理院地図 淡色',
-                    layer: 'tPale',
-                    overview:
+                    '名称': '地理院地図 淡色',
+                    'レイヤ': 'tPale',
+                    '概要':
+                        '国土地理院による地形図',
+                },
+                {
+                    '名称': '地理院地図 オルソ',
+                    'レイヤ': 'tOrt',
+                    '概要':
+                        '国土地理院による衛星・航空写真',
+                },
+                {
+                    '名称': 'MIERUNE Streets',
+                    'レイヤ': 'mieStreets',
+                    '概要': 'OSMデータ・基盤地図情報を利用したMapTiler.comによる道路図',
+                },
+                {
+                    '名称': 'MIERUNE Gray',
+                    'レイヤ': 'mieGray',
+                    '概要': 'OSMデータ・基盤地図情報を利用したMapTiler.comによるグレースケール地図',
+                },
+                {
+                    '名称': 'MIERUNE Dark',
+                    'レイヤ': 'mieDark',
+                    '概要': 'OSMデータ・基盤地図情報を利用したMapTiler.comによるダークカラー地図',
+                },
+                {
+                    '名称': 'MIERUNE Satellite',
+                    'レイヤ': 'mieSatellite',
+                    '概要': 'MapTiler.comによる衛星・航空写真',
+                },
+                {
+                    '名称': 'OpenStreetMap',
+                    'レイヤ': 'osm',
+                    '概要':
+                        '公式タイルサーバのOpenStreetMap CartoによるレンダリングOpenStreetMap地図',
+                },
+                {
+                    '名称': 'Mapbox Streets',
+                    'レイヤ': 'mapStreets',
+                    '概要': 'ゼンリンデータ（日本国内のみ）を利用したMapbox.comによる道路図',
+                },
+                {
+                    '名称': 'Mapbox Dark',
+                    'レイヤ': 'mapDark',
+                    '概要': 'ゼンリンデータ（日本国内のみ）を利用したMapbox.comによるダークカラー地図',
+                },
+                {
+                    '名称': 'Mapbox Satelite',
+                    'レイヤ': 'mapSatellite',
+                    '概要': 'Mapbox.comによる衛星・航空写真',
+                },
+                { '名称': 'ESRI', 'レイヤ': 'esri', '概要': 'Esri.comによる道路図' },
+                {
+                    '名称': 'Bing Maps Road',
+                    'レイヤ': 'bRoad',
+                    '概要': 'Bing maps street',
+                },
+                {
+                    '名称': 'Google Maps Road',
+                    'レイヤ': 'gRoad',
+                    '概要': 'Google maps street',
+                },
+                {
+                    '名称': 'Apple Maps Standerd',
+                    'レイヤ': 'apmapsStandard',
+                    '概要': 'Apple Mapによる道路図',
+                },
+                {
+                    '名称': 'Apple Maps Satelite',
+                    'レイヤ': 'apmapsSatelite',
+                    '概要': 'Apple Mapによる衛星・航空写真',
+                },
+                {
+                    '名称': 'Mapfan',
+                    'レイヤ': 'mapfan',
+                    '概要': 'Mapfan.comによる道路図',
+                },
+            ],
+            itemsEglish: [
+                {
+                    'Name': '地理院地図 淡色',
+                    'Layer': 'tPale',
+                    'Overview':
                         'topographic map by gsi.go.jp (Geospatial Information Authority of Japan)',
                 },
                 {
-                    name: '地理院地図 オルソ',
-                    layer: 'tOrt',
-                    overview:
+                    'Name': '地理院地図 オルソ',
+                    'Layer': 'tOrt',
+                    'Overview':
                         'satellite and aerial photos by gsi.go.jp (Geospatial Information Authority of Japan)',
                 },
                 {
-                    name: 'MIERUNE Streets',
-                    layer: 'mieStreets',
-                    overview: 'street map by MapTiler.com using OSM data',
+                    'Name': 'MIERUNE Streets',
+                    'Layer': 'mieStreets',
+                    'Overview': 'street map by MapTiler.com using OSM data and Digital Map (Basic Geospatial Information) by Geospatial Information Authority of Japan',
                 },
                 {
-                    name: 'MIERUNE Gray',
-                    layer: 'mieGray',
-                    overview: 'gray map by MapTiler.com using OSM data',
+                    'Name': 'MIERUNE Gray',
+                    'Layer': 'mieGray',
+                    'Overview': 'gray map by MapTiler.com using OSM data and Digital Map (Basic Geospatial Information) by Geospatial Information Authority of Japan',
                 },
                 {
-                    name: 'MIERUNE Dark',
-                    layer: 'mieDark',
-                    overview: 'dark map by MapTiler.com using OSM data',
+                    'Name': 'MIERUNE Dark',
+                    'Layer': 'mieDark',
+                    'Overview': 'dark map by MapTiler.com using OSM data and Digital Map (Basic Geospatial Information) by Geospatial Information Authority of Japan',
                 },
                 {
-                    name: 'MIERUNE Satellite',
-                    layer: 'mieSatellite',
-                    overview: 'satellite and aerial photos by MapTiler.com',
+                    'Name': 'MIERUNE Satellite',
+                    'Layer': 'mieSatellite',
+                    'Overview': 'satellite and aerial photos by MapTiler.com',
                 },
                 {
-                    name: 'OpenStreetMap',
-                    layer: 'osm',
-                    overview:
+                    'Name': 'OpenStreetMap',
+                    'Layer': 'osm',
+                    'Overview':
                         'OpenStreetMap data rendered with OpenStreetMap Carto from official tile server',
                 },
                 {
-                    name: 'Mapbox Streets',
-                    layer: 'mapStreets',
-                    overview: 'street map by Mapbox.com using OSM data',
+                    'Name': 'Mapbox Streets',
+                    'Layer': 'mapStreets',
+                    'Overview': 'street map by Mapbox.com using ZENRIN data(Japanese domestic only)',
                 },
                 {
-                    name: 'Mapbox Dark',
-                    layer: 'mapDark',
-                    overview: 'dark map by Mapbox.com using OSM data',
+                    'Name': 'Mapbox Dark',
+                    'Layer': 'mapDark',
+                    'Overview': 'dark map by Mapbox.com using ZENRIN data(Japanese domestic only)',
                 },
                 {
-                    name: 'Mapbox Satelite',
-                    layer: 'mapSatellite',
-                    overview: 'satellite and aerial photos by Mapbox.com',
+                    'Name': 'Mapbox Satelite',
+                    'Layer': 'mapSatellite',
+                    'Overview': 'satellite and aerial photos by Mapbox.com',
                 },
-                { name: 'ESRI', layer: 'esri', overview: 'Street map by Esri.com' },
+                { 'Name': 'ESRI', 'Layer': 'esri', 'Overview': 'Street map by Esri.com' },
                 {
-                    name: 'Bing Maps Road',
-                    layer: 'bRoad',
-                    overview: 'Bing maps street',
-                },
-                {
-                    name: 'Google Maps Road',
-                    layer: 'gRoad',
-                    overview: 'Google maps street',
+                    'Name': 'Bing Maps Road',
+                    'Layer': 'bRoad',
+                    'Overview': 'Bing maps street',
                 },
                 {
-                    name: 'Mapfan',
-                    layer: 'mapfan',
-                    overview: 'street map by Mapfan.com',
+                    'Name': 'Google Maps Road',
+                    'Layer': 'gRoad',
+                    'Overview': 'Google maps street',
                 },
-            ],
+                {
+                    'Name': 'Apple Maps Standerd',
+                    'Layer': 'apmapsStandard',
+                    'Overview': 'standerd map by Apple Mapkit',
+                },
+                {
+                    'Name': 'Apple Maps Satelite',
+                    'Layer': 'apmapsSatelite',
+                    'Overview': 'satelite map by Apple Mapkit',
+                },
+                {
+                    'Name': 'Mapfan',
+                    'Layer': 'mapfan',
+                    'Overview': 'street map by Mapfan.com',
+                },
+            ]
         };
     },
     beforeRouteEnter(to, from, next) {
